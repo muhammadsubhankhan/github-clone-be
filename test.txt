@@ -1,0 +1,1 @@
+Build folder created for aritfact but it's malfunctioning in next build. So we have delete the build folder after uploading to nexus. 

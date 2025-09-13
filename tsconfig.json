@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "strict": true,
+    "removeComments": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "incremental": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": true,
+    "noUnusedParameters": true,
+    "strictBindCallApply": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "@config/*": ["src/config/*"],
+      "@contracts/*": ["src/contracts/*"],
+      "@enums/*": ["src/contracts/enums/*"],
+      "@interfaces/*": ["src/contracts/interfaces/*"],
+      "@types/*": ["src/contracts/types/*"],
+      "@decorators/*": ["src/decorators/*"],
+      "@filters/*": ["src/filters/*"],
+      "@guards/*": ["src/guards/*"],
+      "@models/*": ["src/models/*"],
+      "@modules/*": ["src/modules/*"],
+      "@repositories/*": ["src/repositories/*"],
+      "@response/*": ["src/response/*"],
+      "@seeders/*": ["src/seeders/*"],
+      "@utils/*": ["src/utils/*"]
+    }
+  }
+}
