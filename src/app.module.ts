@@ -1,4 +1,5 @@
 import { getMongooseConfig } from '@/config/database.config';
+import { AuthModule } from '@modules/auth/auth.module';
 import { RepositoryModule } from '@modules/repository/repository.module';
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
@@ -22,6 +23,7 @@ import { LoggerModule } from 'nestjs-pino';
       useFactory: async (configService: ConfigService) =>
         getMongooseConfig(configService),
     }),
+    AuthModule,
     RepositoryModule,
   ],
   controllers: [],
