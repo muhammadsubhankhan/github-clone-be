@@ -15,9 +15,6 @@ export class UserModel extends BaseModel {
   @Prop({ required: true, maxlength: 80 })
   displayName: string;
 
-  @Prop({ required: true, maxlength: 80 })
-  uuid: string;
-
   @Prop()
   role: UserType;
 }
